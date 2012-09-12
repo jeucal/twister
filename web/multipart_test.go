@@ -147,7 +147,7 @@ func TestMultiPart(t *testing.T) {
 			continue
 		}
 		if !reflect.DeepEqual(req.Param, tt.param) {
-			t.Errorf("%q\n\tparam=%v, want %v", req.Param, tt.param)
+			t.Errorf("%q\n\tparam=%v, want %v", tt.body, req.Param, tt.param)
 			continue
 		}
 		if !reflect.DeepEqual(parts, tt.parts) {
