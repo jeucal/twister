@@ -1,7 +1,0 @@
-<h1>Editing {{.page.Title |html}}</h1>
-
-<form action="/edit/{{.page.Title |html}}" method="POST">
-<input type="hidden" name="xsrf" value="{{.xsrf}}">
-<div><textarea name="body" rows="20" cols="80">{{printf "%s" .page.Body |html}}</textarea></div>
-<div><input type="submit" value="Save"></div>
-</form>
